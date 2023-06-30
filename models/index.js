@@ -32,6 +32,5 @@ Post.belongsTo(User, {
     onDelete: 'CASCADE'
 });
 
-
-
+// Export models
 module.exports = { User, Post, Comment };
