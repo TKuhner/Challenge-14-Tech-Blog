@@ -12,7 +12,6 @@ class User extends Model {
 // define table columns and configuration
 User.init(
     {
-        // TABLE COLUMN DEFINITIONS GO HERE
         // define an id column
         id: {
             // use the special Sequelize DataTypes object provide what type of data it is
@@ -51,7 +50,7 @@ User.init(
         }
     },
     {
-        // TABLE CONFIGURATION OPTIONS GO HERE (https://sequelize.org/v5/manual/models-definition.html#configuration))
+
         hooks: {
             // set up beforeCreate lifecycle "hook" functionality
             async beforeCreate(newUserData){
